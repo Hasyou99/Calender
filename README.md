@@ -1,6 +1,7 @@
 ###面向对象的方法实现万年历
 
 实现思路：
+
    1.创建构造函数constructor
 
    ```
@@ -31,8 +32,9 @@
    ```
 
    3.实现思路：
-       
-``` ==> 创建日历对象的主体内容 
+   
+     ==> 创建日历对象的主体内容   
+``` 
        showMain:function(){
 			var $t = this;//将this对象缓存到$t中,this指向Calender对象
 			
@@ -46,7 +48,8 @@
 		}
 ```
 
-``` ==> 创建标题头区域（包含切换按钮/年月）
+	 ==> 创建标题头区域（包含切换按钮/年月）
+``` 
        showHeader: function(){
 			var $t = this;
 			//左控制键
@@ -104,8 +107,9 @@
 			};		
 		}
 ```
-      
-``` ==> 创建week标题头
+
+     ==> 创建week标题头
+``` 
       showWeek: function(){
 			var $t = this;
 			//创建table标签
@@ -126,8 +130,9 @@
 			}
 		},
 ```
-      
-```==> 创建容纳日期的容器 
+
+      ==> 创建容纳日期的容器 
+```
       showDate:function(){
 			var $t = this;
 			var table = document.createElement('table')
@@ -180,7 +185,8 @@
 		},
 ```
 
-``` ==> 封装一个方法，待点击切换月份时，初始化页面 
+	==> 封装一个方法，待点击切换月份时，初始化页面 
+``` 
       //封装一个方法，待点击切换月份时，初始化页面
 		showInit: function(){
 			var $t = this;
@@ -190,7 +196,7 @@
 			$t.showDate()
 		}
 ```
-      
+
 ```  ==> 对象实例化和初始化页面
         //实例化一个Calender对象
 	    var calender = new Calender() 
